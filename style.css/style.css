@@ -93,7 +93,6 @@ body {
 }
 
 
-
 .header__logo {
    font-size: 24px;
    font-weight: 700;
@@ -103,7 +102,6 @@ body {
 .header__menu {
    margin: 0px 0px 0px 133px;
 }
-
 
 
 @media (max-width: 992px) {
@@ -123,7 +121,6 @@ body {
       margin: 0px 0px 0px 20px;
    }
 }
-
 
 
 .menu {
@@ -148,12 +145,12 @@ body {
 }
 
 
-
 @media (max-width: 479px) {
    .menu__link {
       font-size: 18px;
    }
 }
+
 
 /*------page-----------------------------------------------*/
 .page {
@@ -175,17 +172,90 @@ body {
 
 ._container {}
 
-.main-block__body {}
+.main-block__body {
+   padding: 184px 0px 191px 0px;
+   position: relative;
+   z-index: 2;
+   max-width: 400px;
+}
 
-.main-block__title {}
 
-.main-block__text {}
+@media (max-width: 992px) {
+   .main-block__body {
+      padding: 120px 0px 190px 0px;
+   }
 
-.main-block__buttons {}
+}
 
-.main-block__button {}
 
-.main-block__button_border {}
+.main-block__body>*:not(:last-child) {
+   margin: 0px 0px 35px 0px;
+}
+
+.main-block__title {
+   font-size: 58px;
+   line-height: 137%;
+   letter-spacing: 0.2px;
+   font-weight: 800;
+}
+
+
+@media (max-width: 479px) {
+   .main-block__title {
+      font-size: 42px;
+   }
+}
+
+
+.main-block__text {
+   color: #737373;
+   font-size: 20px;
+   line-height: 150%;
+}
+
+.main-block__buttons {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px 0;
+}
+
+.main-block__button {
+   border-radius: 37px;
+   display: flex;
+   min-height: 48px;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 0.2px;
+   font-weight: 700;
+   text-align: center;
+   line-height: 150%;
+   padding: 5px 36px;
+   margin: 10px 0;
+}
+
+
+@media (max-width: 479px) {
+   .main-block__button {
+      flex: 1 1 100%;
+   }
+}
+
+@media (min-width: 479px) {
+   .main-block__button:not(:last-child) {
+      margin-right: 10px;
+   }
+}
+
+
+.main-block__button_orange {
+   background: #ff7b47;
+   color: #fff;
+}
+
+.main-block__button_border {
+   color: #0d5c63;
+   border: 1px solid #0d5c63;
+}
 
 .main-block__image {
    position: absolute;
@@ -193,4 +263,17 @@ body {
    height: 100%;
    top: 0;
    left: 0;
+}
+
+
+@media (max-width: 1300px) {
+   .main-block__image img {
+      object-position: right;
+   }
+}
+
+@media (max-width: 992px) {
+   .main-block__image {
+      opacity: 0.5;
+   }
 }
