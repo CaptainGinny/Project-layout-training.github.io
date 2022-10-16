@@ -168,6 +168,8 @@ body {
 
 .page__advantages {}
 
+.page__practice {}
+
 /*------HEADER BLOCK-----------------------------------------------*/
 .header-block {
    text-align: center;
@@ -500,3 +502,44 @@ body {
    line-height: 150%;
    font-size: 16px;
 }
+
+/*------practice---------------------------------------------*/
+
+.practice {
+   padding: 125px 0 80px 0;
+}
+
+.practice__container {}
+
+._container {}
+
+.practice__header {
+   margin: 0 0 45px 0;
+}
+
+.practice__body {
+   margin: 0 -15px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.practice__column {
+   padding: 0 15px;
+   flex: 0 1 25%;
+}
+
+.practice__item {
+   background-color: #fff;
+}
+
+.item-practice {}
+
+.item-practice__link {}
+
+.item-practice__title {}
+
+.item-practice__text {}
+
+.item-practice__image {}
+
+.item-practice__content {}
