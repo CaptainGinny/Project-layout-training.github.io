@@ -172,6 +172,13 @@ body {
 
 .page__whoweare {}
 
+.page__clients:not(:last-child) {
+   margin: 0 0 10px 0;
+}
+
+.page__subscribe {}
+
+
 /*------HEADER BLOCK-----------------------------------------------*/
 .header-block {
    text-align: center;
@@ -608,6 +615,7 @@ body {
 /*------woweare---------------------------------------------*/
 
 .whoweare {
+   background: #fff;
    padding: 80px 0 130px 0;
 }
 
@@ -751,5 +759,140 @@ body {
 
    .whoweare__video:not(:last-child) {
       margin: 50px 0 0 0;
+   }
+}
+
+/*------clients---------------------------------------------*/
+
+.clients {
+   padding: 50px 0;
+}
+
+.clients__container {}
+
+.clients__items {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   min-width: 140px;
+}
+
+.clients__item {
+   padding: 8px 15px;
+   flex: 0 1 16.6667%;
+   text-align: center;
+}
+
+.clients__item img {
+   max-width: 100%;
+}
+
+@media (max-width: 767px) {
+   .clients {
+      padding: 30px 0;
+   }
+
+}
+
+/*------subscribe---------------------------------------------*/
+
+.subscribe {
+   position: relative;
+   padding: 0 0 20px 0;
+}
+
+.subscribe:before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 77px;
+   left: 0;
+   background: #252B42;
+}
+
+.subscribe__container {}
+
+.subscribe__body {
+   position: relative;
+   z-index: 2;
+   padding: 30px 50px;
+   align-items: center;
+   background: #17213C;
+   border-radius: 2px;
+}
+
+.subscribe__title {
+   color: #fff;
+   font-size: 133%;
+   line-height: 32px;
+   font-weight: 700px;
+   letter-spacing: 0.1px;
+}
+
+.subscribe__form {
+   flex: 0 1 50%;
+   display: flex;
+   align-items: center;
+}
+
+.subscrie__input {
+   width: 100%;
+   flex: 1 1 auto;
+   min-height: 58px;
+   padding: 0 20px;
+   background: #F9F9F9;
+   color: #737373;
+   border-right: 0;
+   box-sizing: border-box;
+   border: 1px solid #E6E6E6;
+   border-radius: 5px 0 0 5px;
+}
+
+.subscrie__input:focus {
+   color: #000;
+}
+
+.subscribe__button {
+   background: #FF7B47;
+   border: 1px solid #E6E6E6;
+   border-radius: 0px 5px 5px 0px;
+   display: flex;
+   min-height: 58px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #fff;
+   padding: 0 22px;
+}
+
+
+
+@media (min-width: 1070px) {
+   .subscribe__body {
+      margin: 0 30px;
+   }
+}
+
+@media (min-width: 810px) {
+   .subscribe__title {
+      max-width: 266px;
+   }
+
+   .subscribe__body {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+@media (max-width: 810px) {
+   .subscribe__title {
+      margin: 0 0 20px 0;
+   }
+
+   .subscribe__body {
+      margin: 0 -15px;
+      padding: 20px 15px;
    }
 }
