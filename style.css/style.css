@@ -178,6 +178,8 @@ body {
 
 .page__subscribe {}
 
+.page__getintouch {}
+
 
 /*------HEADER BLOCK-----------------------------------------------*/
 .header-block {
@@ -895,4 +897,96 @@ body {
       margin: 0 -15px;
       padding: 20px 15px;
    }
+}
+
+
+/*------getintouch---------------------------------------------*/
+
+.getintouch {
+   padding: 80px 0 135px 0;
+}
+
+.getintouch__container {}
+
+.getintouch__header {
+   margin: 0 0 80px 0;
+}
+
+.getintouch__items {
+   display: flex;
+   align-items: center;
+}
+
+.getintouch__item {
+   flex: 0 1 33.333%;
+}
+
+.item-getintouch {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   padding: 50px 15px;
+}
+
+.item-getintouch__active {
+   background-color: #252B42;
+   color: #fff;
+}
+
+.item-getintouch__active .item-getintouch__button {
+   border: 1px solid #fff;
+   color: #fff;
+}
+
+.item-getintouch__icon {}
+
+.item-getintouch>*:not(:last-child) {
+   margin: 0 0 15px 0;
+}
+
+.item-getintouch__emails {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.item-getintouch__email {
+   color: inherit;
+   font-weight: 600;
+   line-height: 150%;
+   font-size: 16px;
+}
+
+.item-getintouch__email:hover {
+   text-decoration: underline;
+}
+
+
+.item-getintouch__label {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 150%;
+}
+
+.item-getintouch__button {
+   border: 1px solid #ff7b47;
+   min-height: 44px;
+   display: flex;
+   font-weight: 600;
+   justify-content: center;
+   align-items: center;
+   color: #FF7B47;
+   line-height: 142%;
+   padding: 5px 20px;
+   text-align: center;
+   transition: all 0.3s ease 0s;
+   border-radius: 5px;
+}
+
+.item-getintouch__button:hover {
+   background-color: #FF7B47;
+   color: #fff;
 }
