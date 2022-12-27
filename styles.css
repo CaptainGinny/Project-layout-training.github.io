@@ -1147,15 +1147,15 @@ body {
 }
 
 .contacts-footer__item_phone {
-   background: url(/img/footer/tel.svg) 0 0 no-repeat;
+   background: url(./img/footer/tel.svg) 0 0 no-repeat;
 }
 
 .contacts-footer__item_map {
-   background: url(/img/footer/bx_bx-map.svg) 0 0 no-repeat;
+   background: url(./img/footer/bx_bx-map.svg) 0 0 no-repeat;
 }
 
 .contacts-footer__item_email {
-   background: url(/img/footer/mail.svg) 0 0 no-repeat;
+   background: url(./img/footer/mail.svg) 0 0 no-repeat;
 }
 
 .footer__bottom {
